@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: #161513;
+  color: white;
+  font-family: outfit;
+}
+
+.services-format:hover {
+  box-shadow: white 0px 0px 10px;
+}
+
+.mywork-container-img:hover {
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: white 0px 10px 10px -7px;
+}
+
+.input {
+  color: #A0A0A0;
+  background: #32323c;
+  font-family: Outfit;
+
+}
+
+.contact-submit {
+  border: none;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 15px 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-submit:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.footer {
+  margin: 50px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-email-input {
+  background: #32323B;
+  padding: 20px 30px;
+  padding-right: 80px;
+  border-radius: 50px;
+}
+
+.footer-email-input:hover {
+  border: 2px solid white;
+}
+
+.footer-email-input input {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #A0A0A0;
+  font-family: outfit;
+  font-size: 18px;
+}
+
+.footer-subscribe {
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 50px;
+  background: linear-gradient(246deg, #DF8908 -5.09%, #B415FF 106.28%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-subscribe:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+
+.footer-bottom-right {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+/* Add this CSS to your stylesheet or component style */
+.icon {
+  animation: moveUpDown 2s infinite alternate;
+}
+
+@keyframes moveUpDown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-40px);
+  }
+}
+
+.socialLine {
+  background: linear-gradient(246deg, #DF8908 -5.09%, #B415FF 106.28%);
+}
+
+.styling:hover {
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px white;
+  transition: all 0.2s;
+}
+.nav-mob-close{
+  display: none;
+}
+
+/*navbar media query */
+@media(max-width:768px){
+  .navbar{
+    margin:20px 50px;
+  }
+  .nav-connect{
+    display: none;
+  }
+  .nav-mob-open{
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+  .nav-mob-close{
+    display: block;
+    position: relative;
+    top:30px;
+    left:290px;
+    width: 30px;
+  }
+  .nav-menu{
+    position: fixed;
+    flex-direction:column;
+    align-items: start;
+    top:0px;
+    gap:30px;
+    background-color: #1F0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right:-350px;
+  }
+  .li{
+    font-size: 30px;
+    padding-left: 100px;
+    flex-direction: row;
+    gap:20px;
+
+  }
+}
