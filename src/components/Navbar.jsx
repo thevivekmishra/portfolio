@@ -1,17 +1,30 @@
-import React, { useState } from "react";
+import React, { useState ,useRef } from "react";
 import logo from '../assets/vlogo1.png'
 import underline from '../assets/nav_underline.svg';
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import menu_open from '../assets/menu_open.svg'
+import menu_close from '../assets/menu_close.svg';
 
 const Navbar = () => {
     const [menu, setMenu] = useState("home");
-    
+    const menuRef = useRef();
+
+    const openMenu = () => {
+        menuRef.current.style.right="0";
+    }
+    const closeMenu = () => {
+        menuRef.current.style.right="-350px";
+    }
+
     return (
         <div className="navbar flex justify-between items-center mt-[20px]  w-[1250px] m-auto sticky top-0 bg-[#161513] z-[100] t-2 ">
             
-            <img className="h-[60px] mt-2" src={logo} alt="Logo" ></img>
-
-            <ul className="nav-menu flex justify-center items-center gap-10 text-[20px] cursor-pointer">
+            <img className=" logo h-[60px] mt-2" src={logo} alt="Logo" ></img>
+            <img src ={menu_open} onClick={openMenu} className="nav-mob-open"/>
+           
+            <ul ref={menuRef} className="nav-menu flex justify-center items-center gap-10 text-[20px] cursor-pointer">
+                
+                <img src ={menu_close} onClick={closeMenu} className="nav-mob-close"/>
                 
                 <li className="li hover:scale-110 transition-transform  hover:text-yellow-300 duration-[0.3s] ease-in-out"><AnchorLink className="anchor-link" offset={50} href="#home"> <p onClick={() => setMenu("home")}>Home</p></AnchorLink>{menu === "home" ? <img src={underline} /> : <></>}</li>
                 <li className="li hover:scale-110 transition-transform  hover:text-yellow-300 duration-[0.3s] ease-in-out"><AnchorLink className="anchor-link" offset={50} href="#about"> <p onClick={() => setMenu("about")}>About</p></AnchorLink>{menu === "about" ? <img src={underline} /> : <></>}</li>
