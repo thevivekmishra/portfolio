@@ -5,13 +5,13 @@ import arrow_icon from '../assets/arrow_icon.svg';
 
 const Mywork = () => {
     return (
-        <div id="projects" className="mywork flex flex-col items-center justify-center gap-[80px] mt-8 mb-10">
-            <div className="mywork-title relative">
-                <h1 className="text-[60px] font-semibold px-8">My Projects</h1>
-                <img className="absolute z-[-1] bottom-0 right-0 " src={theme_pattern} />
+        <div id="projects" className="mywork flex flex-col items-center justify-center w-[1200px] m-auto pt-[30px] mt-[60px] ">
+            <div className="mywork-title relative mb-[60px]">
+            <h1 className=" text-[60px] font-semibold ]">My Projects</h1>
+                <img className="absolute bottom-0 right-0 z-[-1]" src={theme_pattern} />
             </div>
 
-            <div className="mywork-container grid grid-cols-3 gap-7 w-[1280px] ">
+            <div className="mywork-container grid grid-cols-3 gap-7 ">
                 {mywork_data.map((work, index) => {
                     return (
                         <div key={index} className="relative">
@@ -28,7 +28,7 @@ const Mywork = () => {
                     );
                 })}
             </div>
-            <div className="mywork-showmore flex justify-center items-center border-2 w-[350px] border-yellow-400 rounded-full m-4 p-3 gap-3 mb-[80px] cursor-pointer hover:bg-yellow-400 transition-all duration-[0.6s] ease-in-out hover:text-black ">
+            <div className="mywork-showmore flex justify-center items-center border-2 w-[350px] border-yellow-400 rounded-full m-4 p-3 gap-3 mb-[60px] mt-[60px] cursor-pointer hover:bg-yellow-400 transition-all duration-[0.6s] ease-in-out hover:text-black ">
                 <button onClick={() => window.open("https://github.com/thevivekmishra?tab=repositories", "_blank")} className="text-[30px]">
                     GitHub Repo.
                 </button>

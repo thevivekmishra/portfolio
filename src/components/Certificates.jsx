@@ -16,11 +16,11 @@ const Certificate = () => {
     };
 
     return (
-        <div id="certificates" className="certificates flex flex-col items-center justify-center gap-[80px] mt-8 mb-10">
+        <div id="certificates" className="certificates flex flex-col items-center justify-center gap-[80px] mt-8 mb-10 w-[1200px] m-auto">
 
             <div className="certificate-title relative">
-                <h1 className="pt-0 pb-[30px] text-[60px] font-semibold">Certificates</h1>
-                <img className="absolute bottom-7 right-[-20px] z-[-1]" src={theme_pattern} alt="Theme Pattern" />
+            <h1 className="pt-[30px] pb-[10px] text-[60px] font-semibold">Certificates</h1>
+                <img className="absolute bottom-0 right-0 z-[-1]" src={theme_pattern} />
             </div>
             <div className="certificates-text-image flex flex-col w-[1200px] m-auto">
 
@@ -34,9 +34,9 @@ const Certificate = () => {
 
                 <div className="styling mb-9 p-5">
                     <div className="flex">
-                        <img className="h-[600px] w-[50%]" src={cybersecurity} alt="Cybersecurity Certificate" />
+                        <img className= "cyber w-[30%]" src={cybersecurity} alt="Cybersecurity Certificate" />
                         <div>
-                        <p className="p-4 pt-[150px] text-[30px] text-justify flex justify-between items-center ml-[50px]">Completed a hands-on cybersecurity virtual internship, mastering threat detection, vulnerability assessment, and incident response. Equipped with practical skills in network security, cryptography, and ethical hacking.</p>
+                        <p className="p-4 text-[30px] text-justify flex justify-between items-center ml-[50px]">Completed a hands-on cybersecurity virtual internship, mastering threat detection, vulnerability assessment, and incident response. Equipped with practical skills in network security, cryptography, and ethical hacking.</p>
                         <button className="btn-download ml-[530px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={() => handleDownload(cybersecurity)}>Download Certificate</button>
                     </div>
                     </div>

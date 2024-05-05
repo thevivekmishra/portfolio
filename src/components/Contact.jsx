@@ -32,10 +32,10 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className="contact flex flex-col justify-center items-center gap-[90px]  mt-[80px] mb-[170px]  m-auto ">
+        <div id="contact" className="contact flex flex-col justify-center items-center gap-[90px]  pt-[30px] mb-[60px] w-[1200px] m-auto ">
             <div className="contact-title relative">
-                <h1 className="pt-0 pb-[30px] text-[60px] font-semibold">Get In Touch </h1>
-                <img className="absolute bottom-7 right-[-20px] z-[-1]" src={theme_pattern} />
+            <h1 className="pt-[0px] pb-[10px] text-[60px] font-semibold">Get In Touch</h1>
+                <img className="absolute bottom-0 right-0 z-[-1]" src={theme_pattern} />
             </div>
 
             <div className="contact-section flex gap-[150px] w-[1200px]">
@@ -46,7 +46,7 @@ const Contact = () => {
                     <div className="contact-details flex flex-col gap-[30px] ">
                         <div className="contact-detail flex align-center gap-5">
                             <img src={mail_icon} />
-                            <p>mishravivek9569@gmailil.com</p>
+                            <p>mishravivek9569@gmail.com</p>
                         </div>
 
                         <div className=" contact-detail flex align-center gap-5">

@@ -9,13 +9,13 @@ import theme_pattern from '../assets/theme_pattern.svg';
 
 const FollowAccounts = () => {
     return (
-        <div className="followAccounts flex flex-col items-center justify-center gap-[80px]  mb-[150px] ">
-            <div className="follow-me-title relative">
-                <h1 className="text-[60px] font-semibold px-8 ">Follow Me</h1>
-                <img className=" absolute z-[-1] bottom-0 right-0" src={theme_pattern} />
+        <div className="followAccounts flex flex-col items-center justify-center gap-[80px]  mb-[150px] w-[1200px] m-auto ">
+            <div className="follow-me-title relative ">
+            <h1 className="pt-[0px] pb-[10px] text-[60px] font-semibold">Follow me</h1>
+                <img className="absolute bottom-0 right-0 z-[-1]" src={theme_pattern} />
             </div>
 
-            <div className="icon flex w-[1280px] m-auto justify-around items-center mt-[80px] mb-[-80px]">
+            <div className="icon flex justify-around items-center mt-[80px] mb-[-80px] ">
 
                 <div className="github h-[80px] w-[90px] ">
                     <a href="https://github.com/thevivekmishra/" target="_blank">
