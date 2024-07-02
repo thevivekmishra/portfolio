@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import FollowAccounts from "./components/FollowAccounts";
 import Footer from "./components/Footer";
 import Certificate from "./components/Certificates";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
       <Services />
       <Mywork />
       <Certificate/>

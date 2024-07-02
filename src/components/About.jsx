@@ -14,61 +14,18 @@ const About = () => {
             <div className="about-section flex  ">
                
                 <div className="about-left ">
-                    <img className="h-[60%] w-full mt-[9px]" src={myFullProfile} />
+                    <img className="h-[100%] w-full mt-[9px]" src={myFullProfile} />
                 </div>
                 <div className="about-right flex flex-col gap-[80px]">
                     <div className="about-para flex flex-col ml-[50px] text-[24px] text-justify ">
-                        <p>Hello! I'm Vivek Kumar Mishra, a passionate 3rd-year BTech Computer Science Engineering student at MIET Greater Noida, affiliated with Dr. APJ Abdul Kalam Technical University, Lucknow.</p>
+                        <p>Hello! I'm Vivek Kumar Mishra, a passionate 4th-year B.Tech Computer Science Engineering student at MIET Greater Noida, affiliated with Dr. APJ Abdul Kalam Technical University, Lucknow.</p>
                         <p>With a fervent love for coding and problem-solving, I find immense joy in crafting innovative web projects. My journey in the realm of technology has been driven by a relentless curiosity and a thirst for knowledge. I believe in the power of technology to transform ideas into reality and am always eager to explore new horizons in the ever-evolving world of computer science.  </p>
                         <p>Beyond the lines of code,I enjoy delving into diverse interests, constantly seeking inspiration from the world around me. Join me as I embark on this exhilarating journey of creativity, learning, and exploration. Let's code the future together!</p>
                     </div>
 
-
-                    <div className="about-skills flex flex-col ml-[50px]  gap-4 justify-center ">
-
-                        <div class="about-skill flex items-center gap-2 hover:scale-110 transition-all duration-500 ease-in-out">
-                            <p class="text-2xl font-semibold ">HTML</p>
-                            <hr class="border-none w-[80%] h-2 rounded-full bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 ml-[100px]"></hr>
-                        </div>
-
-                        <div class="about-skill flex items-center gap-2 hover:scale-110 transition-all duration-500 ease-in-out">
-                            <p class="text-2xl font-semibold ">CSS</p>
-                            <hr class="border-none w-[70%] h-2 rounded-full bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 ml-[120px]"></hr>
-                        </div>
-
-                        <div class="about-skill flex items-center gap-2 hover:scale-110 transition-all duration-500 ease-in-out">
-                            <p class="text-2xl font-semibold ">TAILWIND</p>
-                            <hr class="border-none w-[55%] h-2 rounded-full bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 ml-[50px]"></hr>
-                        </div>
-
-                        <div class="about-skill flex items-center gap-2 hover:scale-110 transition-all duration-500 ease-in-out">
-                            <p class="text-2xl font-semibold  ">JAVA SCRIPT</p>
-                            <hr class="border-none w-[60%] h-2 rounded-full bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 ml-[20px]"></hr>
-                        </div>
-
-                        <div class="about-skill flex items-center gap-2 hover:scale-110 transition-all duration-500 ease-in-out">
-                            <p class="text-2xl font-semibold ">REACT JS</p>
-                            <hr class="border-none w-[70%] h-2 rounded-full bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 ml-[60px]"></hr>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div className="about-achievements flex w-[1200px] m-auto justify-around mb-[80px] ">
-                <div className="about-achievement flex flex-col items-center gap-2 hover:scale-110 transition-all duration-500 ease-in-out">
-                    <h1 className="text-[50px] text-yellow-400" >2+</h1>
-                    <p className="text-[20px] font-bold  text-pink-400">YEARS OF EXPERIENCE</p>
-                </div>
-                <div class="border-l border-gray-400"></div>
-                <div className="about-achievement flex flex-col items-center gap-2 hover:scale-110 transition-all duration-500 ease-in-out">
-                    <h1 className="text-[50px]  text-yellow-400">10+</h1>
-                    <p className="text-[20px] font-bold text-pink-400" >PROJECTS COMPLETED</p>
-                </div>
-                <div class="border-l border-gray-400"></div>
-                <div className="about-achievement flex flex-col items-center gap-2 hover:scale-110 transition-all duration-500 ease-in-out">
-                    <h1 className="text-[50px]  text-yellow-400" >5+</h1>
-                    <p className="text-[20px] font-bold  text-pink-400" >HAPPY CLIENTS</p>
-                </div>
-            </div>
+            
         </div>
     )
 }

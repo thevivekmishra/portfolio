@@ -7,6 +7,7 @@ import project6_img from '../assets/passwordgenerator.jpg'
 import project7_img from '../assets/youtube.jpg'
 import project8_img from '../assets/foodapp.jpg'
 import project9_img from '../assets/expandingcard.jpg'
+import project10_img from '../assets/fileupload.jpg'
 
 
 const mywork_data = [
@@ -50,19 +51,25 @@ const mywork_data = [
         w_no:7,
         w_img:project7_img,
         codeLink:"https://github.com/thevivekmishra/Youtube.git",
-        liveLink:"https://github.com/thevivekmishra/Youtube.git",
+        liveLink:"https://youtubeappclone.vercel.app/",
     },
-    {
-        w_no:8,
-        w_img:project8_img,
-        codeLink:"https://github.com/thevivekmishra/Food-ordering-app.git",
-        liveLink:"https://github.com/thevivekmishra/Food-ordering-app.git",
-    },
+    // {
+    //     w_no:8,
+    //     w_img:project8_img,
+    //     codeLink:"https://github.com/thevivekmishra/Food-ordering-app.git",
+    //     liveLink:"https://myfoodhub.vercel.app/",
+    // },
     {
         w_no:9,
         w_img:project9_img,
         codeLink:"https://github.com/thevivekmishra/expanding-cards.git",
         liveLink:"https://thevivekmishra.github.io/expanding-cards/",
+    },
+    {
+        w_no:10,
+        w_img:project10_img,
+        codeLink:"https://github.com/thevivekmishra/Fileupload-client",
+        liveLink:"https://uploadandshare.vercel.app/",
     },
 ]
  

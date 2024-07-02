@@ -1,7 +1,6 @@
 import React from "react";
 import theme_pattern from '../assets/theme_pattern.svg';
 import Services_Data from '../assets/services_data';
-import arrow_icon from '../assets/arrow_icon.svg';
 
 const Services = () => {
     return (
@@ -16,7 +15,7 @@ const Services = () => {
 
                 {Services_Data.map((services, index) => {
                     return (
-                        <div key={index} className="services-format flex flex-col p-8 justify-center gap-5 rounded-xl cursor-pointer  border-2 border-white  transition-all duration-300 hover:scale-105  ">
+                        <div key={index} className="services-format flex flex-col p-8 justify-center gap-5 rounded-xl  border-2 border-white  transition-all duration-300 hover:scale-105  ">
 
                             <h3 className="text-[30px] font-semibold ">{services.s_no}</h3>
                             <h2 className="font-semibold text-[28px] bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500">{services.s_name}</h2>

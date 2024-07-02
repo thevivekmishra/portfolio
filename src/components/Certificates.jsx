@@ -3,6 +3,8 @@ import theme_pattern from '../assets/theme_pattern.svg';
 import prutor from '../assets/prutor.jpg';
 import cybersecurity from '../assets/cybersecurity.jpg';
 import microsoft from '../assets/microsoft.jpg';
+import codsoft from '../assets/codsoft.jpg';
+import ir4 from '../assets/ir4.jpg';
 
 const Certificate = () => {
     // Function to handle the download action
@@ -16,39 +18,61 @@ const Certificate = () => {
     };
 
     return (
-        <div id="certificates" className="certificates flex flex-col items-center justify-center gap-[80px] mt-8 mb-10 w-[1200px] m-auto">
-
+        <div id="certificates" className="certificates flex flex-col items-center justify-center mt-8 mb-10">
             <div className="certificate-title relative">
-            <h1 className="pt-[30px] pb-[10px] text-[60px] font-semibold">Certificates</h1>
-                <img className="absolute bottom-0 right-0 z-[-1]" src={theme_pattern} />
+                <h1 className="pt-16 pb-10 text-5xl font-semibold text-center">Certificates</h1>
+                <img className="absolute bottom-0 right-0 z-[-1]" src={theme_pattern} alt="Pattern" />
             </div>
-            <div className="certificates-text-image flex flex-col w-[1200px] m-auto">
 
-                <div className="styling mb-9 p-5">
-                    <div className="flex">
-                        <p className="text-[30px] text-justify p-4 flex justify-between items-center">Certified in full-stack web development, proficient in front-end and back-end technologies including HTML, CSS, JavaScript, React.js, and Node.js. Skilled in creating dynamic web applications with seamless user experiences and robust functionality. </p>
-                        <img className="h-[40%] w-[40%]" src={prutor} alt="Prutor Certificate" />
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 max-w-7xl mt-8">
+                {/* Certificate 1 */}
+                <div className="certificate-card bg-black shadow-md rounded-lg overflow-hidden hover:border-2 border-white p-3 hover:shadow-white transition-all ease-in-out">
+                    <img className="w-full h-64 object-cover" src={prutor} alt="Prutor Certificate" />
+                    <div className="p-6">
+                        <h1 className="text-xl font-semibold mb-2">PRUTOR@IITK</h1>
+                        <p className="text-base mb-4">Certified in full-stack web development, proficient in HTML, CSS, JavaScript, React.js, and Node.js. Skilled in creating dynamic web applications.</p>
+                        <button className="btn-download bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={() => handleDownload(prutor)}>Download Certificate</button>
                     </div>
-                    <button className="btn-download ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={() => handleDownload(prutor)}>Download Certificate</button>
                 </div>
 
-                <div className="styling mb-9 p-5">
-                    <div className="flex">
-                        <img className= "cyber w-[30%]" src={cybersecurity} alt="Cybersecurity Certificate" />
-                        <div>
-                        <p className="p-4 text-[30px] text-justify flex justify-between items-center ml-[50px]">Completed a hands-on cybersecurity virtual internship, mastering threat detection, vulnerability assessment, and incident response. Equipped with practical skills in network security, cryptography, and ethical hacking.</p>
-                        <button className="btn-download ml-[530px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={() => handleDownload(cybersecurity)}>Download Certificate</button>
+                {/* Certificate 2 */}
+                <div className="certificate-card bg-black shadow-md rounded-lg overflow-hidden hover:border-2 border-white p-3 hover:shadow-white transition-all ease-in-out">
+                    <img className="w-full h-64 object-cover" src={cybersecurity} alt="Cybersecurity Certificate" />
+                    <div className="p-6">
+                        <h1 className="text-xl font-semibold mb-2">Palo Alto - Cybersecurity</h1>
+                        <p className="text-base mb-4">Certified in cybersecurity with expertise in network security, threat detection, and mitigation strategies.</p>
+                        <button className="btn-download bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={() => handleDownload(cybersecurity)}>Download Certificate</button>
                     </div>
-                    </div>
-                   
                 </div>
 
-                <div className="styling mb-9 p-5">
-                    <div className="flex ">
-                        <p className="p-4 text-[30px] text-justify mr-[50px] flex justify-between items-center">Successfully completed all requirements for developing an intelligent document processing solution using Azure AI Document Intelligence. Proficient in leveraging cutting-edge AI technology to automate document processing tasks efficiently</p>
-                        <img className="h-[40%] w-[40%]" src={microsoft} alt="Microsoft Certificate" />
+                {/* Certificate 3 */}
+                <div className="certificate-card bg-black shadow-md rounded-lg overflow-hidden hover:border-2 border-white p-3 hover:shadow-white transition-all ease-in-out">
+                    <img className="w-full h-64 object-cover" src={microsoft} alt="Microsoft Certificate" />
+                    <div className="p-6">
+                        <h1 className="text-xl font-semibold mb-2">Microsoft</h1>
+                        <p className="text-base mb-4">Completed requirements for developing an intelligent document processing solution using Azure AI Document Intelligence.</p>
+                        <button className="btn-download bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={() => handleDownload(microsoft)}>Download Certificate</button>
                     </div>
-                    <button className="btn-download ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={() => handleDownload(microsoft)}>Download Certificate</button>
+                </div>
+
+                {/* Certificate 4 */}
+                <div className="certificate-card bg-black shadow-md rounded-lg overflow-hidden hover:border-2 border-white p-3 hover:shadow-white transition-all ease-in-out">
+                    <img className="w-full h-64 object-cover" src={codsoft} alt="Codsoft Certificate" />
+                    <div className="p-6">
+                        <h1 className="text-xl font-semibold mb-2">CODSOFT-INTERNSHIP</h1>
+                        <p className="text-base mb-4">Codsoft Virtual Internship Certificate recognizing successful completion of a rigorous virtual internship program.</p>
+                        <button className="btn-download bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={() => handleDownload(codsoft)}>Download Certificate</button>
+                    </div>
+                </div>
+
+                {/* Certificate 5 */}
+                <div className="certificate-card bg-black shadow-md rounded-lg overflow-hidden hover:border-2 border-white p-3 hover:shadow-white transition-all ease-in-out">
+                    <img className="w-full h-64 object-cover" src={ir4} alt="IR4 Foundation Certificate" />
+                    <div className="p-6">
+                        <h1 className="text-xl font-semibold mb-2">IR4 FOUNDATION</h1>
+                        <p className="text-base mb-4">Successfully completed the IR4 Foundation Certification course under the Tech Saksham initiative, gaining skills in Ubuntu, Java Virtual Machine (JVM), and web development.</p>
+                        <button className="btn-download bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4  m-auto" onClick={() => handleDownload(ir4)}>Download Certificate</button>
+                    </div>
                 </div>
             </div>
         </div>

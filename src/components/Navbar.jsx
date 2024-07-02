@@ -17,7 +17,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar flex justify-between items-center mt-[20px]  w-[1250px] m-auto sticky top-0 bg-[#161513] z-[100] t-2 ">
+        <div className="navbar flex justify-between items-center mt-[20px]  w-[1300px] m-auto sticky top-0 bg-[#161513] z-[100] t-2 ">
             
             <img className=" logo h-[60px] mt-2" src={logo} alt="Logo" ></img>
             <img src ={menu_open} onClick={openMenu} className="nav-mob-open"/>
