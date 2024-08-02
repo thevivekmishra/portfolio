@@ -5,11 +5,10 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Mywork from "./components/MyWork";
 import Contact from "./components/Contact";
-import FollowAccounts from "./components/FollowAccounts";
 import Footer from "./components/Footer";
 import Certificate from "./components/Certificates";
 import Skills from "./components/Skills";
-
+import { Toaster } from 'react-hot-toast';
 const App = () => {
   return (
     <div>
@@ -21,8 +20,8 @@ const App = () => {
       <Mywork />
       <Certificate/>
       <Contact />
-      <FollowAccounts />
       <Footer />
+      <Toaster/>
     </div>
   )
 }
